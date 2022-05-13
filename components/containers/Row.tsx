@@ -1,12 +1,18 @@
 import React from "react";
 import clsx from "clsx";
 
-interface Props {
+interface ContainerProps {
   className?: string;
   children?: React.ReactNode;
 }
 
-const RowContainer: React.FC<Props> = ({ className, children }) => {
+interface RowProps {
+  center?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+}
+
+const RowContainer: React.FC<ContainerProps> = ({ className, children }) => {
   return (
     <div
       className={clsx(
@@ -19,11 +25,12 @@ const RowContainer: React.FC<Props> = ({ className, children }) => {
   );
 };
 
-const Row: React.FC<Props> = ({ className, children }) => {
+const Row: React.FC<RowProps> = ({ className, children, center = true }) => {
   return (
     <div
       className={clsx(
-        "min-h-screen flex items-center justify-center",
+        "min-h-screen flex",
+        { "items-center": center },
         className
       )}
     >

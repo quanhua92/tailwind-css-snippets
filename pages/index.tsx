@@ -15,6 +15,11 @@ export default function Home() {
             <a>Collections</a>
           </Link>
         </li>
+        <li>
+          <Link href="/headers">
+            <a>Headers</a>
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -5,7 +5,7 @@ import { RowContainer, Row } from "@components/containers/Row";
 const Page = () => {
   return (
     <RowContainer>
-      <Row className="max-w-3xl mx-auto">
+      <Row>
         <Card
           title="The standard Lorem Ipsum passage, used since the 1500s"
           subtitle="vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium"
