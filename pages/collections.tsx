@@ -2,6 +2,7 @@ import React from "react";
 import TrendingProducts from "@components/collections/TrendingProducts";
 import SplitImages from "@components/collections/SplitImages";
 import { RowContainer, Row } from "@components/containers/Row";
+import Masonry from "@components/collections/Masonry";
 
 const Page = () => {
   const args_trending = {
@@ -60,6 +61,9 @@ const Page = () => {
       </Row>
       <Row>
         <SplitImages {...args_split} />
+      </Row>
+      <Row>
+        <Masonry />
       </Row>
     </RowContainer>
   );
