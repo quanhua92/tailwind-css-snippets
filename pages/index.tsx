@@ -20,6 +20,16 @@ export default function Home() {
             <a>Headers</a>
           </Link>
         </li>
+        <li>
+          <Link href="/heros">
+            <a>Heros</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/offers">
+            <a>Offers</a>
+          </Link>
+        </li>
       </ul>
     </div>
   );
