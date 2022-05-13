@@ -4,7 +4,7 @@ import SplitImages from "@components/collections/SplitImages";
 import { RowContainer, Row } from "@components/containers/Row";
 
 const Page = () => {
-  const trending_args = {
+  const args_trending = {
     products: [
       {
         name: "Apple Pen",
@@ -33,7 +33,7 @@ const Page = () => {
     ],
   };
 
-  const split_args = {
+  const args_split = {
     leftPanel: {
       subtitle: "Pen",
       title: "Apple Pen",
@@ -56,10 +56,10 @@ const Page = () => {
   return (
     <RowContainer>
       <Row>
-        <TrendingProducts {...trending_args} />
+        <TrendingProducts {...args_trending} />
       </Row>
       <Row>
-        <SplitImages {...split_args} />
+        <SplitImages {...args_split} />
       </Row>
     </RowContainer>
   );
