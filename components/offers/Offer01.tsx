@@ -18,7 +18,12 @@ const Offer01 = ({ className, items }: Props) => {
     <ul
       className={clsx(
         className,
-        `grid md:grid-cols-${numItems}`,
+        `grid`,
+        {
+          "grid-cols-3": numItems === 3,
+          "grid-cols-4": numItems === 4,
+          "grid-cols-5": numItems === 5,
+        },
         "divide-y divide-gray-200 dark:divide-gray-700 md:divide-y-0 md:divide-x",
         "text-gray-900 dark:text-gray-100"
       )}
