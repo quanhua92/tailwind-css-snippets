@@ -30,6 +30,11 @@ export default function Home() {
             <a>Offers</a>
           </Link>
         </li>
+        <li>
+          <Link href="/carousel">
+            <a>Carousel</a>
+          </Link>
+        </li>
       </ul>
     </div>
   );
